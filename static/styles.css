@@ -1,0 +1,213 @@
+html {
+    background-color: #262022;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logo {
+    width: 10%;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+header * {
+    border-radius: 25px;
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 50%;
+}
+
+img {
+    background-color: #262022;
+    margin: 5px auto;
+    display: flex;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+nav>h3 {
+    border: solid lightgrey 1px;
+    margin: 5px auto;
+}
+
+nav>h3>a {
+    border: solid lightgrey 1px;
+    margin: 5px auto;
+}
+
+h2 {
+    display: flex;
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+}
+
+h4 {
+    display: flex;
+    background-color: lightgrey;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+}
+
+p {
+    display: flex;
+    background-color: lightgrey;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+    margin: 5px auto;
+}
+
+#bookinglink {
+    display: flex;
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+
+}
+
+table {
+    display: flex;
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+}
+
+form * {
+    margin: 3px auto;
+}
+
+form {
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+    padding: 5px;
+}
+
+#reviewlabel {
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: 0;
+    width: 90%;
+}
+
+#bookinglabel {
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+}
+
+#yourappt{
+    border-radius:10px ;
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 35%;
+}
+
+#yourappt *{
+    width: 90%;
+    border: 0;
+}
+
+#haircutimg {
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+}
+
+.login {
+    background-color: lightgrey;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 25%;
+    display: flex;
+}
+
+#footer {
+    display: flex;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    border: double 5px black;
+    width: 32%;
+    padding: 2px;
+}
+table *{
+    padding: 4px;
+    justify-content: center;
+}
+
+form>p{
+    border: 0;
+    width: 90%;
+}
+
+#adminheaders {
+    display: flex;
+    justify-content: center;
+}
+
+#adminheaders>h2{
+    margin: 25px;
+}
+
+#admintables {
+    display: flex;
+    justify-content: center;
+}
+
+#admintables>table{
+    background-color: lightgrey;
+    margin: 20px ;
+    
+    text-align: center;
+    border: double 5px black;
+    width: 30%;
+}

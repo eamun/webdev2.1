@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block main_content %}
+
+<h2>Our Range of Haircuts</h2>
+
+<table>
+    {% for haircut in haircuts %}
+    <tr>
+        <td>{{ haircut['name'] }}</td>
+        <td>€{{ haircut['price'] }}</td>
+        <td><a href="{{ url_for('haircut', haircutid=haircut['haircutid'] ) }}">Info</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

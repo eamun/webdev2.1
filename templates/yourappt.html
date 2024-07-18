@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block main_content %}
+
+<h1 id="bookinglabel">Your Booking is confirmed!</h1>
+<div id="yourappt">
+    <p>You are booked for {{ appt['haircutname'] }}</p>
+    <p>Your appointment is booked for {{ appt['appttime'] }} on {{ appt['apptdate'] }}</p>
+    <p>Cost: €{{ appt['price'] }}</p>
+    <p><small>pay in store because im not allowed to deal with credit cards yet</small></p>
+</div>
+
+<form action="" method="POST" novalidate>
+    <h3 id="reviewlabel">Leave a review!</h3>
+    {{ form.hidden_tag() }}
+    {{ form.review() }}
+    {% for error in form.review.errors %}
+    {{ error }}
+    {% endfor %}
+    {{ form.submit() }}
+    {% if form.validate_on_submit %}
+    <p>Thanks for your feedback :-]</p>
+    {% endif %}
+</form>
+
+{% endblock %}

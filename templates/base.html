@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Barber Chop</title>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" />
+    <link rel="icon" href="/static/favicon-32x32.png">
+</head>
+<header>
+    <img id="logo" src="/static/logo.png" alt="barber chop logo">
+    <h1>The Barber Chop</h1>
+    <p>User: {{ g.user }}</p>
+    <nav>
+        <h3><a href="{{ url_for('haircuts')}}">Home</a></h3>
+        <h3><a href="{{ url_for('register') }}">register</a></h3>
+        {% if g.user %}
+        <h3><a href="{{ url_for('logout') }}">logout</a></h3>
+        {% else %}
+        <h3><a href="{{ url_for('login') }}">login</a></h3>
+        {% endif %}
+    </nav>
+</header>
+
+<body>
+    {% block main_content %}
+    {% endblock %}
+</body>
+<footer>
+    <p id="footer"><small>All images sourced from Unsplash and Flickr (except Mark Burns.jpg, but he gave me consent to use that)</small></p>
+</footer>
+</html>

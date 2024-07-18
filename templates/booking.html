@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block main_content %}
+<h2>{{ haircut['name'] }}</h2>
+<img id="haircutimg" src="/static/{{ haircut['image'] }}" alt="">
+<h4>Price: €{{ haircut['price'] }}</h4>
+<p>{{ haircut['description'] }}</p>
+<form action="" method="POST" novalidate>
+    {{ form.hidden_tag() }}
+    {{ form.userid.label }}
+    {{ form.userid(Disabled=True) }}
+    {% for error in form.userid.errors %}
+        {{ error }}
+    {% endfor %}
+    <br>
+    {{ form.appttime.label }}
+    {{ form.appttime(placeholder='HH:MM') }}
+    {% for error in form.appttime.errors %}
+        {{ error }}
+    {% endfor %}
+    <br>
+    {{ form.apptdate.label }}
+    {{ form.apptdate(placeholder='DD/MM/YYYY') }}
+    {% for error in form.apptdate.errors %}
+        {{ error }}
+    {% endfor %}
+    <br>
+    {{ form.submit() }}
+</form>
+
+
+{% endblock %}

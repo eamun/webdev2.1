@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block main_content %}
+<div id="adminheaders">
+    <h2>Appointments</h2>
+    <h2>Reviews</h2>
+</div>
+{% if appointments %}
+<div id="admintables">
+    <table>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Username</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Price</th>
+        </tr>
+        {% for appointment in appointments %}
+        <tr>
+            <td>{{ appointment['apptid'] }}</td>
+            <td>{{ appointment['userid'] }}</td>
+            <td>{{ appointment['appttime'] }}</td>
+            <td>{{ appointment['apptdate'] }}</td>
+            <td>€{{ appointment['price'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No appointments currently, Do Better!</p>
+    {% endif %}
+    {% if reviews %}
+    <table>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Username</th>
+            <th>Review</th>
+        </tr>
+        {% for review in reviews %}
+        <tr>
+            <td>{{ review['reviewid'] }}</td>
+            <td>{{ review['userid'] }}</td>
+            <td>{{ review['review'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No reviews currently, Do Better!</p>
+    {% endif %}
+</div>
+
+{% endblock %}

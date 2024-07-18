@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block main_content %}
+<h2>{{ haircut['name'] }}</h2>
+<img id="haircutimg" src="/static/{{ haircut['image'] }}" alt="">
+<h4>Price: €{{ haircut['price'] }}</h4>
+<p>{{ haircut['description'] }}</p>
+<a id="bookinglink" href="{{ url_for('booking', haircutid=haircut['haircutid'] ) }}">Book an appointment today!</a>
+
+
+{% endblock %}
